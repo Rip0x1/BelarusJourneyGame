@@ -103,3 +103,9 @@
 -----
 
 ## 📸 Интерфейс игры
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/797dfd1a-d80b-4c38-9c61-fefe63ae2afa" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f9ca4ae-61ef-49e3-8bb7-c6a76a8ba46a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b4f27710-037b-44bc-a440-a18f1486d546" />
+
+
+
