@@ -1,0 +1,49 @@
+namespace BelarusJourneyGame
+{
+    [default_interface]
+    runtimeclass Region : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        Region();
+
+    Int32 Id;
+    String Name;
+    String Description;
+    String MapUrl;
+    String ImagePath;
+
+    Boolean IsUnlocked;
+    Int32 ExplorationProgress;
+    String SecretFact;
+    String LastEvent;
+    Double Latitude;
+    Double Longitude;
+}
+
+[default_interface]
+runtimeclass MainViewModel : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+{
+    MainViewModel();
+
+Windows.Foundation.Collections.IObservableVector<Object> Regions { get; };
+Region SelectedRegion;
+String CurrentEvent;
+String CurrentRegionDescription{ get; };
+
+String PlayerRank{ get; };
+
+Int32 Energy; 
+void Rest(); 
+void ExploreCurrentRegion();
+}
+
+[default_interface]
+runtimeclass MainWindow : Microsoft.UI.Xaml.Window
+{
+    MainWindow();
+    MainViewModel ViewModel { get; };
+    static Microsoft.UI.Xaml.Visibility ConvertProgressToVisibility(Int32 progress);
+    static Double ProgressToOpacity(Int32 progress);
+    static String ProgressToStatusText(Int32 progress);
+    static Microsoft.UI.Xaml.Media.SolidColorBrush ProgressToStatusColor(Int32 progress);
+}
+}

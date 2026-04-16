@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="BelarusJourneyGame/BelarusJourneyGame.vcxproj" Id="ffc118e6-67e5-4cd4-9a11-e6759c42b778">
+    <Deploy />
+  </Project>
+</Solution>
